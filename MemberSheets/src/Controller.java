@@ -4,9 +4,8 @@ public class Controller {
 	SQLiteDatabase database;
 	
 
-	public Controller() {
-		database = new SQLiteDatabase();
-		
+	public Controller(SQLiteDatabase databaseIn) {
+		database = databaseIn;
 	}
 
 	public void addNewMember(Member newMember) {

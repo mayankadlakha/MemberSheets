@@ -2,7 +2,8 @@
 public class MemberSheetsDriver {
 
 	public static void main(String[] args) {
-		Controller controller = new Controller();
+		SQLiteDatabase database = new SQLiteDatabase();
+		Controller controller = new Controller(database);
 		GUI gui = new GUI(controller);
 	}
 
